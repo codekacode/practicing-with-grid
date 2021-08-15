@@ -18,36 +18,61 @@ ul {
 .container {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  grid-auto-rows: 22rem;
+  /* grid-template-columns: 40px  50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto; */
+  /* grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); */
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  /* grid-auto-rows: 22rem; */
+  grid-template-areas: 
+  "aquas aquas aquas aquas"
+  "yelows yelows yelows yelows"
+  "pinks . . perus"
+  "lemons lemons lemons lemons"
+  ". browns browns browns";
 }
 
 article {
   height: 300px;
-  max-width: 200px;
-  
+  width: 200px;
 }
 
 .article-1 {
   background-color: aqua;
+  /* grid-column: 3 / span 2;
+  grid-row: 1 / 3; */
+  grid-area: aquas;
+  /* grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3; */
 
 }
 
 .article-2 {
   background-color: yellow;
+  grid-area: yelows;
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2; */
 }
 .article-3 {
   background-color: pink;
+  grid-area: pinks;
 }
 .article-4 {
   background-color: peru;
+  grid-area: perus;
+  
 }
 .article-5 {
   background-color: lemonchiffon;
+  grid-area: lemons;
 }
 
 .article-6 {
   background-color: brown;
+  grid-area: browns;
 }
 
 div {
