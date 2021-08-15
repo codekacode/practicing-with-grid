@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: coral;
+}
+
+ul {
+
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-auto-rows: 22rem;
+}
+
+article {
+  height: 300px;
+  max-width: 200px;
+  
+}
+
+.article-1 {
+  background-color: aqua;
+
+}
+
+.article-2 {
+  background-color: yellow;
+}
+.article-3 {
+  background-color: pink;
+}
+.article-4 {
+  background-color: peru;
+}
+.article-5 {
+  background-color: lemonchiffon;
+}
+
+.article-6 {
+  background-color: brown;
+}
+
+div {
+  background-color: ;
+}
+
